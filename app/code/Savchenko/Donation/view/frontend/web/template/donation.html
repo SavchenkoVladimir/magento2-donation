@@ -1,0 +1,17 @@
+<!-- TODO: implement styling in proper way -->
+<!-- ko if: isEnabled -->
+<div class="donation col-mp mp-12">
+    <h3 data-bind="i18n: 'Donate'"></h3>
+
+    <img data-bind="src: donationImageSrc, attr: {class: 'donation_image', src: donationImageSrc}" style="width:150px;">
+    <input type="checkbox" name="add_donation" data-bind="checked: isDonate, attr: {id: 'add_donation'}"/>
+    <label data-bind="attr: {for: 'add_donation'}"><span data-bind="i18n: 'donate'"></span></label>
+
+    <!-- ko if: isDonate -->
+    <select data-bind="event:{ change: changeDonationAmount}, options: donationAmountOptions, selectedOptions: chosenAmount"
+            style="width:150px;"></select>
+    <span data-bind="i18n: 'Please, chose amount to donate'"></span>
+    <!-- /ko -->
+
+</div>
+<!-- /ko -->

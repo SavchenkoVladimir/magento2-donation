@@ -1,0 +1,23 @@
+{
+  "name": "Savchenko_Donation",
+  "description": "Savchenko Magecom Donation developed for FIDESIO SAS as a test task",
+  "require": {
+    "php": "~7.1.3||~7.2.0"
+  },
+  "suggest": {
+    "magento/module-tax-sample-data": "Sample Data version:100.1.*"
+  },
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Savchenko\\Donation\\": ""
+    }
+  },
+  "version": "0.1.0"
+}
